@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard | SmartGarage</title>
+  <link rel="stylesheet" href="admin.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body class="dashboard-body">
+
+  <nav class="admin-nav">
+    <h2>SmartGarage Admin</h2>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <section class="dashboard">
+
+    <div class="card">
+      <h3>Bookings</h3>
+      <div id="bookingsList"></div>
+    </div>
+
+    <div class="card">
+      <h3>Contact Messages</h3>
+      <div id="contactsList"></div>
+    </div>
+
+  </section>
+
+  <script src="admin.js"></script>
+</body>
+</html>
